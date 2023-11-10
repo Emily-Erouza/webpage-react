@@ -1,7 +1,7 @@
 const Contact = () => {
     return ( 
 
-        <div className="contact">
+        <div className="contact" id="contacts" >
 <h2>Contact</h2>
 <div className="info">
 <p>Facebook -  Emily's Resturant And Bar</p><br/>

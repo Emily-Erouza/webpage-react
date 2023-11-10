@@ -1,35 +1,60 @@
+
+
+
 const Menu = () => {
+  
+  let items = [
+    "<b>Wraps</b>",
+    "Turkey - R63",
+    "Chicken - R70",
+    "Mix Beef - R100",
+    "<b>Burger</b>",
+    "Crunchy Double Chicken - R150",
+    "BBQ Chicken Cheese - R180",
+    "<b>Chicken</b>",
+    "Wings - R90",
+    "Grilled Chicken - R200",
+    "Chili Fried Chicken - R120",
+    "<b>Others</b>",
+    "Jollof Rice - R350",
+    "Spaghetti - R50",
+    "Malva Pudding - R380",
+    "Chocolate Cake - R365",
+    "<b>Drinks</b>",
+    "Cocktails - R150",
+    "Coke - R30",
+    "Milkshake - R42",
+    "Orange Juice - R35",
+    "Beverages",
+    "Wine - R180",
+    "Beer - R97",
+    "Cider - R150",
+  ];
+  
+
+
     return (
 
-      <><h2>Menu</h2>
-      <div className="recipe">
-        <p><b>Wraps</b></p>
-        <p>Turkey - R63</p>
-        <p>chicken - R70</p>
-        <p> Mix Beef - R100</p>
-        <p><b>Burger</b></p>
-        <p>crunchy Double Chicken - R150</p>
-        <p>BBQ Chicken cheese - R180</p>
-        <p><b>Chicken</b></p>
-        <p>Wings - R90</p>
-        <p> Grilled Chicken - R200</p>
-        <p>chill fried Chicken - R120</p>
-        <p><b>Others</b></p>
-        <p> Jollof rice  - R350</p>
-        <p>Spaghetti - R50</p>
-        <p> Malva Pudding - R380</p>
-        <p> chocolate Cake - R365</p>
-        <p><b>Drinks</b></p>
-        <p> Cocktails - R150</p>
-        <p>Coke - R30</p>
-        <p>Milkshake- R42</p>
-        <p>Orange Juice - R35</p>
-        <p><b>Beverages</b></p>
-        <p> Wine- R180</p>
-        <p>Beer- R97</p>
-        <p>Cider - R150</p>
-        <button type="submit" className="button">order...</button>
-      </div></>
+        <div className="container">
+        <div className="title">
+        <h3>Menu</h3>
+      </div><div className="menu" id="menu">
+
+          {items.length === 0 && <p>No items found </p>}
+          <ul className="recipe-item ">
+            {items.map((item) => (
+              <li className="recipe" key={item} onClick={() => console.log(item)}> {item} </li>
+            ))}
+          </ul>
+
+          <button type="submit" className="button"  > 
+          <a id="form" href="#form" value="form">order</a>
+          </button>
+
+         
+        </div>
+        </div>
+        
       );
 }
  

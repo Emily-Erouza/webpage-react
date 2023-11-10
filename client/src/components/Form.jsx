@@ -17,9 +17,9 @@ const Form = () => {
     };
 
     return (
-        <div className="Signup">
+        <div className="Signup" id="form">
             <h2>Signup</h2>
-            <div className="form">
+            <div className="form" >
                 <label htmlFor="userName">Name</label>
                 <input
                     type="text"

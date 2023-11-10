@@ -4,28 +4,31 @@ import Service from "./components/Service";
 import Menu from "./components/Menu";
 import Form from "./components/Form";
 import Contact from "./components/Contact";
-// import 'bootstrap/dist/css/bootstrap.css';
-
-
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 function App() {
 
  
   return (
-    <div className="App">
+
 
      
+    <>
     <div className='page'>
-    <Home />
+      <Home />
 
     </div>
-        <Service />
-    <Menu/>
-    <Form/>
-    <Contact/>
+  
+    <Service />
+    <Menu />
+    <Form />
+    
+    <div className='contact'>
+    <Contact />
     </div>
+    </>
+    
   );
 }
 
